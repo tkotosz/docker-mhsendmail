@@ -1,6 +1,6 @@
 FROM php:7.4-cli
 
-COPY --from=97b180949080 /usr/bin/mhsendmail /usr/local/bin/
+COPY --from=tkotosz/mhsendmail:0.2.0 /usr/bin/mhsendmail /usr/local/bin/
 
 RUN echo 'sendmail_path = "/usr/local/bin/mhsendmail --smtp-addr=mailhog:1025"' > /usr/local/etc/php/php.ini;
 

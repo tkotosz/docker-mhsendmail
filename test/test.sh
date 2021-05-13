@@ -29,3 +29,6 @@ echo "Email sent! Check http://localhost:18025 to see it!"
 echo "Check sending email with php..."
 docker-compose exec mhsendmail-with-php php -r "mail('test@mailhog.local', 'Test message 3', 'Some content!', 'From: App <app@mailhog.local>');"
 echo "Email sent! Check http://localhost:18025 to see it!"
+
+echo "Stop docker environment..."
+docker-compose down --remove-orphans

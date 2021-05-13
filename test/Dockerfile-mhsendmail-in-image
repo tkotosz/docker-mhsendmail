@@ -1,5 +1,5 @@
 FROM alpine AS build
 
-COPY --from=97b180949080 /usr/bin/mhsendmail /usr/local/bin/
+COPY --from=tkotosz/mhsendmail:0.2.0 /usr/bin/mhsendmail /usr/local/bin/
 
 ENTRYPOINT ["sleep","infinity"]

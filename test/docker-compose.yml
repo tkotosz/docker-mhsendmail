@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   mhsendmail-bin:
-    image: 97b180949080
+    image: tkotosz/mhsendmail:0.2.0
 
   mhsendmail-in-image:
     build:
