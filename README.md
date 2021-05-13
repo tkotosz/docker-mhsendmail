@@ -1,6 +1,6 @@
 # docker-mhsendmail
 
-Docker image for mhsendmail
+[Docker image](https://hub.docker.com/repository/docker/tkotosz/mhsendmail) for [mhsendmail](https://github.com/mailhog/mhsendmail).
 
 ## Run it directly
 
