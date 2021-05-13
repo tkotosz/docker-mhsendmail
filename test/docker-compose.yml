@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+  mhsendmail-bin:
+    image: 97b180949080
+
+  mhsendmail-in-image:
+    build:
+      context: .
+      dockerfile: Dockerfile-mhsendmail-in-image
+
+  mhsendmail-with-php:
+    build:
+      context: .
+      dockerfile: Dockerfile-mhsendmail-with-php
+
+  mailhog:
+    image: mailhog/mailhog:v1.0.1
+    ports:
+      - "18025:8025"
